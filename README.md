@@ -1,6 +1,6 @@
 # Randomized Gossiping with Effective Resistance Weights: Asynchronous Gossiping Experiments
 
-This repository contains the codes to obtain the comparison results on the asynchronous gossiping algorithms presented in the Numerical Experiments section of the paper [[Can et al, 2019]](https://arxiv.org/abs/1907.13110) which is to appear in IEEE TCNS at the moment this document was prepared.  The experiments compare the performance of effective resistance based asynchronous gossiping algorithm with the Fastest Mixing Markov Chain probabilities (FMMC), Fastest Quantum Gossiping (FQG), asynhronous gossiping with Metropolis based probabilities, and asynchronous randomized uniform gossiping on barbell graphs, small-world graphs, and stochastic block matrices  (SBM) (see the paper for further details on the graphs and the gossiping algorithms). 
+This repository contains the codes to obtain the comparison results on the asynchronous gossiping algorithms presented in the Numerical Experiments section of the paper [[Can et al, 2019]](https://arxiv.org/abs/1907.13110) which is to appear in IEEE TCNS at the moment this document was prepared.  The experiments compare the performance of effective resistance based asynchronous gossiping algorithm with the Fastest Mixing Markov Chain probabilities (FMMC), Fastest Quantum Gossiping (FQG), asynhronous gossiping with Metropolis based probabilities, and asynchronous randomized uniform gossiping on barbell graphs, small-world graphs, and stochastic block models  (SBM) (see the paper for further details on the graphs and the gossiping algorithms). 
 
 # ER based gossiping vs FMMC on barbell graph and small-world graph
 
@@ -17,11 +17,11 @@ In this part, we compute the spectral gaps of expected communication matrices im
 # Miscellaneous
 We give more information on the functions included in the repository below. 
 ## SBMk
-Generates a stochastic block matrix. 
+Generates a stochastic block model. 
 ### _Syntax_
 [L,D,A,Lnorm,Connected]=SBMk(n,k,p,q)
 ### _Description_
-[L,D,A,Lnorm,Connected]=SBMk(n,k,p,q) generates a stochastic block matrix consists of n nodes and k clusters where probability that two nodes belonging to samere cluster is connected is p, and the probability that two nodes belonging to seperate clusters are connected is q. Returns the Laplacian (L), diagonal degree matrix (D), adjacency matrix (A), normalized Laplacian (Lnorm), and boolean variable (Connected) that checks whether the network is connnected or not. 
+[L,D,A,Lnorm,Connected]=SBMk(n,k,p,q) generates a stochastic block model consists of n nodes and k clusters where probability that two nodes belonging to samere cluster is connected is p, and the probability that two nodes belonging to seperate clusters are connected is q. Returns the Laplacian (L), diagonal degree matrix (D), adjacency matrix (A), normalized Laplacian (Lnorm), and boolean variable (Connected) that checks whether the network is connnected or not. 
 
 ## small_world
 Generates a small-world graph. This code was provided by Dr. Necdet Serhat Aybat.
